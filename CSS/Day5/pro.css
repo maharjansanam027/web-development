@@ -1,0 +1,26 @@
+.card{
+    background-color: aqua;
+    width: 30vw;
+    height: 15vh;
+    margin-left: 35vw;
+    border-radius: 10px;
+
+}
+
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+body{
+    background-color: aliceblue;
+}

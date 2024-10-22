@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details Form</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Details Form</h1>
+    <br>
+
+    <form>
+        <label for="fullname">Full Name : </label>
+        <input type="text" name="fname" id="fullname" placeholder="Enter your Full Name">
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input type="email" name="femail" id="email" placeholder="Enter your Email">
+        <br><br>
+
+        <label for="phone">Phone Number : </label>
+        <input type="tel" name="fphone" id="phone" placeholder="Enter your Phone Number">
+        <br><br>
+
+        <label>Gender : </label>
+        <input type="radio" name="gender" id="fmale" value="male">
+        <label for="fmale">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="jobtitle">Job Title</label>
+        <input type="text" name="jtitle" id="jobtitle" placeholder="Enter your Job Title">
+        <br><br>
+
+        <label for="dep">Department : </label>
+        <select name="department" id="dep">
+            <option value="computer">Computer</option>
+            <option value="hr">HR</option>
+            <option value="finance">Finance</option>
+        </select>
+        <br><br>
+
+        <button>Submit</button>
+
+
+    </form>
+
+</body>
+</html>

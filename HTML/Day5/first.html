@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="3">
+        <caption>Nested tables</caption>
+        <tbody>
+            <tr>
+                <td>Main Table row 1 column 1</td>
+                    <td>
+                        <table border="1">         
+                            <!-- started nested table from here -->
+                            <caption>Main Table column 2</caption>
+                            <tbody>
+                                <!-- inner table body -->
+                                <tr>
+                                    <td>Insert Table row1 column 1</td>
+                                    <td>Insert Table row1 column 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Insert Table row 2 column 1</td>
+                                    <td>Insert Table row 2 column 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Insert Table row 3 column 1</td>
+                                    <td>Insert Table row 3 column 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+            </tr>
+            <tr>
+                <td>Main Table row 2 column 1</td>
+                <td align="center">Main Table row 2 column 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
