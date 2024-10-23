@@ -1,0 +1,72 @@
+.container{
+    background-color: aquamarine;
+    height: 1000px;
+    width: 70%;
+    position: relative;
+    
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    font-size: 22px;
+}
+.box1{
+    background-color: red;
+    position: fixed;
+}
+.box2{
+    background-color: rgb(0, 255, 42);
+    position: absolute;
+
+    /* top: 100px; */
+    /* bottom: 50px; */
+    right: 20px;
+
+    
+}
+.box3{
+    background-color: rgb(207, 38, 159);
+    position: relative;
+    left: 550px;
+}
+.box4{
+    background-color: rgb(212, 255, 0);
+    position: sticky;
+    top: 0px;
+}
+
+.newcontainer{
+    height: 800px;
+    background-color: antiquewhite;
+}
+
+
+
+/* position property
+    if it is relative then it will take from original space.
+    Not occupied the orginal space.
+*/
+
+
+
+/* 
+    Absolute Property
+    if it is absolute property then it will search parent what the position is.
+    if the parent has static then it will ignore it will come by seeing view port.
+    ocuupied orginal space.
+*/
+
+/* fixed Property
+    if it is fixed property then it will fixed that part if you scroll then also
+    it will fixed there.
+    its orginal space will ocuppied.
+*/
+
+/* sticky property
+    Note: You must specify at least one of top, right, bottom or left 
+    for sticky positioning to work.
+    it will stick only that container or that tag.
+*/
+
