@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+}
+
+.card{
+    margin: 10px;
+    display: inline-block;
+    border: 10px solid aliceblue;
+    border-radius: 20px;
+    position: relative;
+}
+
+.box{
+    display: inline-block;
+}
+
+.img{
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+
+
+.restaurent{
+    position: relative;
+    margin: 8px 8px;
+}
+.rating{
+    background-color: green;
+    color: white;
+    position: absolute;
+    right: 5px;
+    border-radius: 10px;
+    padding: 6px;
+    margin: -5px;
+}
+
+.region{
+    position: relative;
+    margin: 8px 8px;
+    color: rgb(117, 104, 104);
+}
+
+.amount{
+    position: absolute;
+    right: 5px;
+
+}
+
+.location{
+    position: relative;
+    margin: 8px 8px;
+}
+
+.restaurentName{
+    font-weight: bold;
+}
+
+.address{
+    color: gray;
+}
+
+.distance{
+    position: absolute;
+    right: 5px;
+    font-weight: bold;
+}
+
+.card:hover{
+    background-color: white;
+    cursor: pointer;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.flat{
+    position: absolute;
+    bottom: 125px;
+    left: 0px;
+    color: white;
+    background-color: rgba(30, 112, 255, 0.5);
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+}
