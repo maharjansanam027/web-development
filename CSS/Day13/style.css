@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: bisque;
+}
+
+.container{
+    padding: 30px;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    font-size: 2rem;
+    transition-property: all;
+    transition-duration: 3s;
+
+}
+
+.box{
+    background-color: blueviolet;
+}
+
+.Box1:hover{
+    transform: rotate(90deg);
+    transition-duration: 3s;
+}
+
+.Box2:hover{
+    transition-duration: 3s;
+    transform: scale(2);
+}
+
+.Box4:hover{
+    transition-duration: 3s;
+    transform: skew(45deg);
+}
+
+.Box3:hover{
+    transition-duration: 3s;
+    transform: translate(200px,200px);
+}
+
+.Box5:hover{
+    transform: translateY(200px);
+}
+
