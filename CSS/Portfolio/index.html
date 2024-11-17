@@ -1,90 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Portfolio</title>
-  <link rel="stylesheet" href="styler.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="logo">MyPortfolio</a>
-      <input type="checkbox" id="toggle-menu">
-      <label for="toggle-menu" class="hamburger">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="#section1">Home</a></li>
-        <li><a href="#section2">About</a></li>
-        <li><a href="#section3">Projects</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="styler.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">MyPortfolio</a>
+          <input type="checkbox" id="toggle-menu" />
+          <label for="toggle-menu" class="hamburger">&#9776;</label>
+          <ul class="nav-links">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <!-- First Section -->
-  <section id="section1" class="reveal">
-    <div class="content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hello, I'm Sanam Maharjan!
-        I am a passionate Frontend Developer specializing in creating responsive, user-friendly websites.
-        I enjoy transforming creative ideas into engaging digital experiences using HTML, CSS, and JavaScript.
-        Scroll down to see my projects or get in touch to collaborate!</p>
-      <img src="./img1.jpeg" alt="Creative Image">
-    </div>
-  </section>
+    <!-- First Section -->
+    <main>
+      <section id="section1" class="reveal">
+        <div class="content">
+          <h1>Welcome to My Portfolio</h1>
+          <p>
+            Hello, I'm Sanam Maharjan! I am a passionate Frontend Developer
+            specializing in creating responsive, user-friendly websites. I enjoy
+            transforming creative ideas into engaging digital experiences using
+            HTML, CSS, and JavaScript. Scroll down to see my projects or get in
+            touch to collaborate!
+          </p>
+          <img src="./img1.jpeg" alt="Creative Image" />
+        </div>
+      </section>
 
-  <!-- Second Section -->
-  <section id="section2" class="fade-left">
-    <div class="content">
-      <img src="./img2.jpeg" alt="About Image">
-      <div>
-        <h2>About Me</h2>
-        <p>I am a passionate Frontend Developer skilled in crafting responsive, user-friendly websites and applications. I have a strong foundation in HTML, CSS, and JavaScript, along with experience in modern libraries and frameworks like React. I enjoy transforming creative ideas into interactive digital experiences.</p>
+      <!-- Second Section -->
+      <section id="section2" class="fade-left">
+        <div class="content">
+          <img src="./img2.jpeg" alt="About Image" />
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I am a passionate Frontend Developer skilled in crafting
+              responsive, user-friendly websites and applications. I have a
+              strong foundation in HTML, CSS, and JavaScript, along with
+              experience in modern libraries and frameworks like React. I enjoy
+              transforming creative ideas into interactive digital experiences.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
+      <!-- Third Section -->
+      <section id="section3" class="fade-right">
+        <div class="content">
+          <div>
+            <h2>My Projects</h2>
+            <p>
+              BookMyShow Clone: Built a responsive ticket-booking platform with
+              animations and optimized design. <br />Solar System Animation:
+              Created an interactive solar system animation using CSS and HTML.
+              <br />Online Banking System: Developed a project that helps users
+              manage finances with a user-friendly interface.
+            </p>
+          </div>
+          <img src="./projects.jpg" alt="Project Image" />
+        </div>
+      </section>
+    </main>
 
-  <!-- Third Section -->
-  <section id="section3" class="fade-right">
-    <div class="content">
-      <div>
-        <h2>My Projects</h2>
-        <p>BookMyShow Clone: Built a responsive ticket-booking platform with animations and optimized design.
-        <br>Solar System Animation: Created an interactive solar system animation using CSS and HTML.
-        <br>Online Banking System: Developed a project that helps users manage finances with a user-friendly interface.</p>
-      </div>
-      <img src="./projects.jpg" alt="Project Image">
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <section id="contact">
+    <!-- Footer -->
+    <footer id="footer">
+      <section id="contact">
         <div class="container">
           <h2>Contact Me</h2>
-          <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+          <p>
+            If you have any questions or want to collaborate, feel free to reach
+            out!
+          </p>
           <form class="contact-form">
             <div class="form-group">
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="message">Your Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here"
+                required
+              ></textarea>
             </div>
             <button type="submit" class="btn">Send Message</button>
           </form>
         </div>
       </section>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
