@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    /* background-image: url(./img1.jpeg); */
+    /* background-repeat: no-repeat, repeat; */
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    /* background-color: green; */
+}
+
+.sun{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(216, 238, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.mars{
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: layout;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layout {
+    from{
+        transform: rotate(0deg) translate(100px);
+    }
+    to{
+        transform: rotate(360deg) translate(100px);
+    }
+    
+}
+.earth{
+    height: 45px;
+    width: 45px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: ear;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ear {
+    from{
+        transform: rotate(0deg) translate(160px);
+    }
+    to{
+        transform: rotate(360deg) translate(160px);
+    }
+    
+}
+.jupiter{
+    height: 55px;
+    width: 55px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: jup;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jup {
+    from{
+        transform: rotate(0deg) translate(240px);
+    }
+    to{
+        transform: rotate(360deg) translate(240px);
+    }
+    
+}
+.saturn{
+    height: 55px;
+    width: 55px;
+    background-color: rgb(61, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: sat;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sat {
+    from{
+        transform: rotate(0deg) translate(300px);
+    }
+    to{
+        transform: rotate(360deg) translate(300px);
+    }
+    
+}
+
+.orbital{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position:absolute;
+    right: -30px;
+    bottom: -21px;
+}
+.orbital1{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position:absolute;
+    right: -92px;
+    bottom: -86px;
+}
+.orbital2{
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position:absolute;
+    top: -204px;
+    right: -165px;
+    /* bottom: 0px; */
+}
+.orbital3{
+    width: 590px;
+    height: 590px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position:absolute;
+    top: -269px;
+    right: -220px;
+    /* bottom: 0px; */
+}
+
+
+
+
+
