@@ -1,0 +1,107 @@
+
+/* Here, defining three animations (cursor, words, and typing) for a typing effect, where different words appear one after another, simulating a typewriter style. Let’s break down each animation: */
+
+/* This animation creates a blinking cursor effect */
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--main-color);
+    }
+}
+
+/* This animation switches between different job titles or roles, making each one appear and disappear over time:*/
+@keyframes words {
+    0%,
+    20%{
+        content: "Frontend Developer";
+    }
+    21%,
+    40%{
+        content: "Web Designer";
+    }
+    41%,
+    60%{
+        content: "UI / UX Designer";
+    }
+    61%,
+    80%{
+        content: "web Developer";
+    }
+    81%,
+    100%{
+        content: "Software Tester";
+    }
+}
+
+/* This animation controls the width of the text, simulating a typing effect as if each word is being typed out and then erased: */
+@keyframes typing {
+    /* At this intervals, the width is set to 0, making the text disappear */
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+
+    /*  At this intervals, the width = calc(100% + 8px), displaying the entire text and adding a bit of extra space (8px) to ensure the cursor sits slightly beyond the text. */
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+/* Wrapper for fading element */
+.fade_left {
+    opacity: 0; /* Initial opacity */
+    animation: fadeInLeft 1s ease-in-out forwards; 
+    animation-delay: 1s;
+}
+
+/* Keyframes for left-to-right fade */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Wrapper for fading element */
+.fade_right {
+    opacity: 0; /* Initial opacity */
+    animation: fadeInRight 1s ease forwards;
+    animation-delay: 1s; 
+}
+
+/* Keyframes for right-to-left fade */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
