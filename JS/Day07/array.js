@@ -52,15 +52,15 @@ const arr = [10,20,30,40,"sanam",true,"nanu"];
 // another functionality of splice function.
 
 // splice(starting_index,total_element_delete,add elemet from starting_index)
-// arr.splice(2,3,"hello","boss");
+arr.splice(2,3,"hello","boss");
 
 // toString() and join()
 
 
-// console.log(arr.toString());
+console.log(arr.toString());
 
 // join will give advantage to add ayting between element
-// console.log(arr.join("*"));
+console.log(arr.join("*"));
 
 
 
@@ -68,10 +68,10 @@ const arr = [10,20,30,40,"sanam",true,"nanu"];
 
 // adding to new array conctinate
 
-// let arr1= [1,2,3]
-// let arr2= [10,20,30]
-// let arr4 = ["sanam","rj"]
-// let arr3=arr1.concat(arr2,arr4);
+let arr1= [1,2,3]
+let arr2= [10,20,30]
+let arr4 = ["sanam","rj"]
+let arr3=arr1.concat(arr2,arr4);
 
 // for concationation there is another one also that is push function
 // if we use push function then it will convert into 2d array
