@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.root{
+    display: flex;
+}
+
+
+
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.gray{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+.orange{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+.purple{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
+
+
