@@ -131,7 +131,7 @@ const form = document.getElementById('astroForm');
 
 form.addEventListener('submit',(event)=>{
   event.preventDefault();
-  const firstname=(document.getElementById('firstName').value);
+  const firstname=document.getElementById('firstName').value;
   const lastname=document.getElementById('lastName').value;
   const day=Number(document.getElementById('day').value);
   const month=Number(document.getElementById('month').value);
@@ -167,7 +167,7 @@ form.addEventListener('submit',(event)=>{
 
   const result = document.getElementById('result');
   result.style.display = 'block';
-  result.innerHTML = `${first_message}, ${second_message}. ${third_message}${fourth_message}${fifth_message}${sixth_message}`
+  result.innerHTML = `${first_message}, ${second_message}. ${third_message}${fourth_message}Our recommendation for you is :${fifth_message}. Your future predictions is: ${sixth_message}`
   // console.log(first_message, second_message, third_message)
 
   
