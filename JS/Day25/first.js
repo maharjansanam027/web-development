@@ -24,16 +24,36 @@ const questionBank = [
 
   function RandomQuestion(){
 
-    const data = new Set();
-    // console.log(data);
+    // time complexity is nlog(n)
+
+    // const data = new Set();
     
-        while(data.size!=5){
-            const index = Math.floor(Math.random()*20);
-            data.add(questionBank[index]);
-        }
+    //     while(data.size!=5){
+    //         const index = Math.floor(Math.random()*20);
+    //         data.add(questionBank[index]);
+    //     }
         
-        // convert set into array
-        return [...data];
+    //     // convert set into array
+    //     return [...data];
+
+
+    // time complexity is O(n);
+    let arr = [];
+
+    let length = questionBank.length;
+
+    for(let i = 0;i<5;i++)
+    {
+      const index = Math.floor(Math.random()*length);
+      arr.push(questionBank[index]);
+
+      [questionBank[index],questionBank[length-1]]=[questionBank[length-1],questionBank[index]]
+      // swap(questionBank[index],questionBank[length-1]);
+
+      length--;
+    }
+    return arr;
+
   }
 
 
